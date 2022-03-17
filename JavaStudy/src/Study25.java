@@ -4,7 +4,7 @@ public class Study25 {
   static int outerCv = 0;
 
   class InstanceInner {
-    // 외부 클래스의 private 멤버도 가능한 이유는 결국 같은 클래스안에 들어있기 때문
+    // 1. 외부 클래스의 private 멤버도 가능한 이유는 결국 같은 클래스안에 들어있기 때문
     int liv = outerIv;
     int liv2 = outerCv;
   }
@@ -20,7 +20,7 @@ public class Study25 {
     int lv = 0; // 값이 바뀌지 않은 변수는 상수로 간주함, 만약 값을 바꾸면 상수가 아니게 되서 아래 코드에서 에러 발생
     final int LV = 0;
 
-    // 지역 내부 클래스는 변수는 안되고 상수만 가능함!
+    // 2. 지역 내부 클래스는 변수는 안되고 상수만 가능함!
     // 지역변수는 메서드 종료와 함께 소멸됨
     class LocalInner {
       // 내부 클래스의 객체가 더 오래 존재 가능함(지역변수보다)
