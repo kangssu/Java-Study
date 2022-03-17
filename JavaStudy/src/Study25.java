@@ -4,13 +4,13 @@ public class Study25 {
   static int outerCv = 0;
 
   class InstanceInner {
-    // 외부 클래스의 private 멤버도 가능한 이유는 결국 같은 클래스안에 들어있기 때문!
+    // 외부 클래스의 private 멤버도 가능한 이유는 결국 같은 클래스안에 들어있기 때문
     int liv = outerIv;
     int liv2 = outerCv;
   }
 
   static class StaticInner {
-    // static 클래스는 외부 클래스의 인스턴스에 접근 불가능!
+    // static 클래스는 외부 클래스의 인스턴스에 접근 불가능
     // int siv = outerIv;
     static int scv = outerCv;
   }
